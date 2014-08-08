@@ -21,21 +21,18 @@ colorscheme monokai
 
 set nocompatible
 "---------------------------
-" Start Neobundle Settings.
+"  Start Neobundle Settings.
 "---------------------------
-"bundleで管理するディレクトリを指定
 set runtimepath+=~/.vim/bundle/neobundle.vim/
-
-"--Required:
 call neobundle#begin(expand('~/.vim/bundle/'))
-"neobundle自体をneobundleで管理
 NeoBundleFetch 'Shougo/neobundle.vim'
-"今後このあたりに追加のプラグインをどんどん書いて行きます！！
+
+NeoBundle 'mattn/emmet-vim'
+
 call neobundle#end()
 
 filetype plugin indent on
 NeoBundleCheck
 "-------------------------
-" End Neobundle Settings.
+"  End Neobundle Settings.
 "-------------------------
-NeoBundle 'mattn/emmet-vim'
