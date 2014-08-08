@@ -21,7 +21,7 @@ colorscheme monokai
 
 set nocompatible
 "---------------------------
-" Start Neobundle Settings.
+"  Start Neobundle Settings.
 "---------------------------
 set runtimepath+=~/.vim/bundle/neobundle.vim/
 call neobundle#begin(expand('~/.vim/bundle/'))
@@ -34,5 +34,5 @@ call neobundle#end()
 filetype plugin indent on
 NeoBundleCheck
 "-------------------------
-" End Neobundle Settings.
+"  End Neobundle Settings.
 "-------------------------
