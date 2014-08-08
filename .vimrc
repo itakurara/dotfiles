@@ -21,7 +21,7 @@ colorscheme monokai
 
 set nocompatible
 "---------------------------
-"  Start Neobundle Settings.
+"  Start Neobundle Settings.test
 "---------------------------
 set runtimepath+=~/.vim/bundle/neobundle.vim/
 call neobundle#begin(expand('~/.vim/bundle/'))
