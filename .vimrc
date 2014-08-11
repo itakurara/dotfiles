@@ -18,7 +18,7 @@ set expandtab
 set tabstop=2
 set shiftwidth=2
 colorscheme monokai
-
+set cursorline
 set nocompatible
 "---------------------------
 "  Start Neobundle Settings.
