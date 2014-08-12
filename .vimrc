@@ -21,7 +21,7 @@ set cursorline
 set nocompatible
 inoremap { {}<Left>
 "---------------------------
-"  Start Neobundle Settings.
+" NeoBundle 
 "---------------------------
 set runtimepath+=~/.vim/bundle/neobundle.vim/
 call neobundle#begin(expand('~/.vim/bundle/'))
@@ -41,6 +41,11 @@ call neobundle#end()
 
 filetype plugin indent on
 NeoBundleCheck
-"-------------------------
-"  End Neobundle Settings.
-"-------------------------
+"---------------------------
+" emmet 
+"---------------------------
+let g:use_emmet_complete_tag = 1
+let g:user_emmet_leader_key = '<C-e>'
+let g:user_emmet_settings = {
+      \   'lang' : 'ja'
+      \ }"
