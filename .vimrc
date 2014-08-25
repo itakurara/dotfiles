@@ -30,6 +30,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'mattn/emmet-vim'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'scrooloose/syntastic'
+NeoBundle 'Shougo/neocomplcache'
 
 let g:syntastic_mode_map = {
   \ "mode" : "active",
@@ -49,3 +50,17 @@ let g:user_emmet_leader_key = '<C-e>'
 let g:user_emmet_settings = {
       \   'lang' : 'ja'
       \ }"
+"---------------------------
+" simply javascript indenter
+"---------------------------
+let g:SimpleJsIndenter_BriefMode = 1
+
+"---------------------------
+" neocomplcache 
+"---------------------------
+let g:acp_enableAtStartup = 0
+let g:neocomplcache_enable_at_startup = 1
+let g:neocomplcache_enable_smart_case = 1
+" Set minimum syntax keyword length.
+let g:neocomplcache_min_syntax_length = 3
+let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
