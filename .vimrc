@@ -32,16 +32,26 @@ NeoBundle 'tpope/vim-surround'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'Shougo/neocomplcache'
 
-let g:syntastic_mode_map = {
-  \ "mode" : "active",
-  \ "active_filetypes" : ["xml", "html", "scss", "css", "javascript", "json"],
-  \}
-let g:syntastic_javascript_checker = ['jshint']
-let g:syntastic_json_checker = ['jsonlint']
 call neobundle#end()
 
 filetype plugin indent on
 NeoBundleCheck
+let g:syntastic_check_on_open=0
+let g:syntastic_check_on_save=1
+let g:syntastic_auto_loc_list=1
+let g:syntastic_loc_list_height=6
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_javascript_checkers = ['jshint']
+let g:syntastic_mode_map = {
+      \ 'mode': 'active',
+      \ 'active_filetypes': ['javascript'],
+      \ 'passive_filetypes': []
+      \ }
+let g:syntastic_enable_signs=1
+let g:syntastic_error_symbol='✗'
+let g:syntastic_warning_symbol='⚠'
 "---------------------------
 " emmet 
 "---------------------------
