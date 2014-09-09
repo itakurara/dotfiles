@@ -19,6 +19,8 @@ set shiftwidth=2
 colorscheme monokai
 set cursorline
 set nocompatible
+set laststatus=2
+set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%8P}
 inoremap { {}<Left>
 "---------------------------
 " NeoBundle 
@@ -36,6 +38,9 @@ call neobundle#end()
 
 filetype plugin indent on
 NeoBundleCheck
+"---------------------------
+" syntastic 
+"---------------------------
 let g:syntastic_check_on_open=0
 let g:syntastic_check_on_save=1
 let g:syntastic_auto_loc_list=1
