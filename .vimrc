@@ -16,12 +16,18 @@ set autoindent
 set expandtab
 set tabstop=2
 set shiftwidth=2
+set clipboard=unnamed,autoselect
 colorscheme monokai
 set cursorline
 set nocompatible
 set laststatus=2
 set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%8P}
-inoremap { {}<Left>
+inoremap { {}<LEFT>
+inoremap [ []<LEFT>
+inoremap ( ()<LEFT>
+inoremap " ""<LEFT>
+inoremap ' ''<LEFT>
+imap <c-j> <esc>
 "---------------------------
 " NeoBundle 
 "---------------------------
@@ -33,11 +39,16 @@ NeoBundle 'mattn/emmet-vim'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'Shougo/neocomplcache'
+NeoBundle 'tyru/caw.vim.git'
 
 call neobundle#end()
 
 filetype plugin indent on
 NeoBundleCheck
+
+nmap <C-K> <Plug>(caw:i:toggle)
+vmap <C-K> <Plug>(caw:i:toggle)
+
 "---------------------------
 " syntastic 
 "---------------------------
