@@ -16,9 +16,9 @@ set autoindent
 set expandtab
 set tabstop=2
 set shiftwidth=2
-set mouse=a
-set ttymouse=xterm2
 set clipboard=unnamed,autoselect
+set lines=55
+set columns=230
 colorscheme monokai
 set cursorline
 set nocompatible
@@ -42,7 +42,6 @@ NeoBundle 'tpope/vim-surround'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'tyru/caw.vim.git'
-NeoBundle 'tpope/vim-fugitive'
 
 call neobundle#end()
 
@@ -93,7 +92,3 @@ let g:neocomplcache_enable_smart_case = 1
 " Set minimum syntax keyword length.
 let g:neocomplcache_min_syntax_length = 3
 let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
-
-if has('gui_running')
-  set lines=90 columns=200
-endif
