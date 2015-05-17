@@ -37,12 +37,21 @@ set runtimepath+=~/.vim/bundle/neobundle.vim/
 call neobundle#begin(expand('~/.vim/bundle/'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 
+NeoBundleLazy 'marcus/rsense',{
+      \'autoload':{
+      \'filetypes':'ruby',
+      \ } 
+      \}
+NeoBundle 'Shougo/neocomplcache-rsense.vim', {
+      \ 'depends': ['Shougo/neocomplcache.vim', 'marcus/rsense'],
+      \ }
 NeoBundle 'mattn/emmet-vim'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'tyru/caw.vim.git'
 NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'scrooloose/nerdtree'
 
 call neobundle#end()
 
@@ -97,3 +106,8 @@ let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
 if has('gui_running')
   set lines=90 columns=200
 endif
+"---------------------------
+" Rsense 
+"---------------------------
+let g:rsenseUseOmniFunc = 1
+let g:rsenseHome = "/Users/yui/.vim/bundle/rsense"
