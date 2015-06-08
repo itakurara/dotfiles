@@ -20,6 +20,7 @@ set clipboard=unnamed,autoselect
 set lines=55
 set columns=230
 colorscheme monokai
+set guifont=Osaka-Mono:h16
 set cursorline
 set nocompatible
 set laststatus=2

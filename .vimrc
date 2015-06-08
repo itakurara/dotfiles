@@ -19,6 +19,8 @@ set shiftwidth=2
 set mouse=a
 set ttymouse=xterm2
 set clipboard=unnamed,autoselect
+set binary
+set noeol
 colorscheme monokai
 set cursorline
 set nocompatible
