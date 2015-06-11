@@ -43,6 +43,8 @@ NeoBundle 'tpope/vim-surround'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'tyru/caw.vim.git'
+NeoBundle 'yuratomo/w3m.vim'
+NeoBundle 'thinca/vim-ref'
 
 call neobundle#end()
 
@@ -93,3 +95,8 @@ let g:neocomplcache_enable_smart_case = 1
 " Set minimum syntax keyword length.
 let g:neocomplcache_min_syntax_length = 3
 let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
+
+"---------------------------
+" vim ref 
+"---------------------------
+let g:ref_phpmanual_path = $HOME . '/.vim/php-chunked-xhtml'

@@ -54,6 +54,8 @@ NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'tyru/caw.vim.git'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'yuratomo/w3m.vim'
+NeoBundle 'thinca/vim-ref'
 
 call neobundle#end()
 
@@ -113,3 +115,8 @@ endif
 "---------------------------
 let g:rsenseUseOmniFunc = 1
 let g:rsenseHome = "/Users/yui/.vim/bundle/rsense"
+
+"---------------------------
+" vim ref 
+"---------------------------
+let g:ref_phpmanual_path = $HOME . '/.vim/php-chunked-xhtml'
