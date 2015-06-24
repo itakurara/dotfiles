@@ -22,6 +22,7 @@ set clipboard=unnamed,autoselect
 set binary
 set noeol
 colorscheme monokai
+set guifont=rounded-mplus-1mn-regular:h15
 set cursorline
 set nocompatible
 set laststatus=2
