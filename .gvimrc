@@ -45,6 +45,8 @@ NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'tyru/caw.vim.git'
 NeoBundle 'yuratomo/w3m.vim'
 NeoBundle 'thinca/vim-ref'
+NeoBundle 'kchmck/vim-coffee-script'
+NeoBundle 'digitaltoad/vim-jade'
 
 call neobundle#end()
 

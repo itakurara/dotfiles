@@ -69,6 +69,7 @@ NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'yuratomo/w3m.vim'
 NeoBundle 'thinca/vim-ref'
 NeoBundle 'kchmck/vim-coffee-script'
+NeoBundle 'digitaltoad/vim-jade'
 
 call neobundle#end()
 
