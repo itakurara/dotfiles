@@ -1,8 +1,9 @@
+set nocompatible
 syntax enable
 set number
 set ruler
 set list
-set listchars=tab:>-,trail:-,nbsp:%,extends:>,precedes:<,eol:< 
+set listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:%
 set incsearch
 set hlsearch
 set showmatch
@@ -15,7 +16,9 @@ set history=2000
 set autoindent
 set expandtab
 set tabstop=2
+set smarttab
 set shiftwidth=2
+set softtabstop=2
 set mouse=a
 set ttymouse=xterm2
 set clipboard=unnamed,autoselect
@@ -24,7 +27,6 @@ set noeol
 colorscheme monokai
 set guifont=rounded-mplus-1mn-regular:h15
 set cursorline
-set nocompatible
 set laststatus=2
 set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%8P}
 inoremap { {}<LEFT>
@@ -54,7 +56,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundleLazy 'marcus/rsense',{
       \'autoload':{
       \'filetypes':'ruby',
-      \ } 
+      \ }
       \}
 NeoBundle 'Shougo/neocomplcache-rsense.vim', {
       \ 'depends': ['Shougo/neocomplcache.vim', 'marcus/rsense'],
@@ -66,10 +68,12 @@ NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'tyru/caw.vim.git'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'yuratomo/w3m.vim'
+"NeoBundle 'yuratomo/w3m.vim'
 NeoBundle 'thinca/vim-ref'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'digitaltoad/vim-jade'
+NeoBundle 'bronson/vim-trailing-whitespace'
+NeoBundle 'nathanaelkane/vim-indent-guides'
 
 call neobundle#end()
 
@@ -134,3 +138,14 @@ let g:rsenseHome = "/Users/yui/.vim/bundle/rsense"
 " vim ref 
 "---------------------------
 let g:ref_phpmanual_path = $HOME . '/.vim/php-chunked-xhtml'
+
+"---------------------------
+" vim-indent-guides
+"---------------------------
+let g:indent_guides_enable_on_vim_startup=1
+let g:indent_guides_start_level=2
+let g:indent_guides_auto_colors=0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=235
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=234
+let g:indent_guides_color_change_percent = 30
+let g:indent_guides_guide_size = 1
