@@ -24,6 +24,7 @@ set ttymouse=xterm2
 set clipboard=unnamed,autoselect
 "set binary
 "set noeol
+set nofixeol
 colorscheme monokai
 set guifont=rounded-mplus-1mn-regular:h15
 set cursorline
