@@ -22,8 +22,8 @@ set softtabstop=2
 set mouse=a
 set ttymouse=xterm2
 set clipboard=unnamed,autoselect
-set binary
-set noeol
+"set binary
+"set noeol
 colorscheme monokai
 set guifont=rounded-mplus-1mn-regular:h15
 set cursorline
@@ -145,7 +145,6 @@ let g:ref_phpmanual_path = $HOME . '/.vim/php-chunked-xhtml'
 let g:indent_guides_enable_on_vim_startup=1
 let g:indent_guides_start_level=2
 let g:indent_guides_auto_colors=0
-autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=235
-autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=234
-let g:indent_guides_color_change_percent = 30
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#444433 ctermbg=black
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#333344 ctermbg=darkgray
 let g:indent_guides_guide_size = 1
